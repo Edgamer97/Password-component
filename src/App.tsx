@@ -1,4 +1,3 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Check from "./svg/check.svg";
@@ -50,7 +49,7 @@ function App() {
   }, [inputValue]);
 
   return (
-    <div className="App">
+    <div>
       <h1 className="text-center mt-4 font-weight-bold">Password Component</h1>
       <div className="d-flex align-items-center justify-content-center mt-5">
         <div className="mx-4">

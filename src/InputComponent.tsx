@@ -9,6 +9,7 @@ const InputComponent = ({
   const [value, setValue] = useState<string>("");
 
   useEffect(() => {
+    // We use debounce here to avoid parent rerender on every single key press that happens before the milliseconds set below
     let func = debounce(() => setInputValue(value), 400);
     func();
     return () => func?.cancel();
