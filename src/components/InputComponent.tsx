@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
 import { debounce } from "lodash";
+import { ICProps } from "../types";
 
-const InputComponent = ({
-  setInputValue,
-}: {
-  setInputValue: React.Dispatch<React.SetStateAction<string>>;
-}) => {
+const InputComponent: React.FC<ICProps> = ({ setInputValue }) => {
   const [value, setValue] = useState<string>("");
 
   useEffect(() => {
